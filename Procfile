@@ -1,1 +1,1 @@
-web: gunicorn uas_wsgi_kel4.wsgi
+lsweb: gunicorn uas_si_kel4.wsgi
