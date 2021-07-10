@@ -1,6 +1,26 @@
 {% load static %}
 
 <link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">
+<style>
+body {
+	background-image: url("../static/polls/images/background.gif");
+   }
+</style>
+<body>
+	<h1>Polling Ahli K3 Pesawat Angkat dan Angkut </h1>
+	<p>Tujuan webapp :</p>
+	<p>Polling K3 pesawat angkat-angkut ini dibuat untuk mengevaluasi kesalahan dan mampu memberikan rekomendasi penanganan sesuai standar dan peraturan yang berlaku. Serta memberikan pengetahuan lebih dalam pelaksanaan K3 Pesawat Angkat dan Angkut.</p>
+	<p>Deskripsi</p>
+	<p>Polling ini memuat informasi tentang K3 Pesawat Angkat dan Angkut. Tersedia akses bagi mahasiswa untuk memilih pertanyaan dalam polling. Pertanyaan pada polling memiliki empat opsi jawaban dengan satu jawaban yang menjadi preferensi terbaik untuk pertanyaan yang ada. Jawaban dengan preferensi terbaik adalah pilihan yang menjadi prioritas dalam pelaksanaan K3 Pesawat Angkat Angkut.</p>
+	<p>Tim K3 Pesawat Angkat dan Angkut PPNS</p>
+	<p>Anggota :</p>
+	<ul>
+		<li>1. Intan Nashucha Haris Saputri(0517040030) : Membuat pertanyaan polling, Memprogram django get started 2.7 dan 2.8</li>
+		<li>2. Nadya Shintadevi (0517040034) : Ketua tim, Membuat jawaban dan deskripsi polling, Memprogram django get started 2.3, 3.4</li>
+		<li>3. Natiqa Mutafania Prastiti (0517040035) : Editor web polling, Push ke heroku, memprogram django get started 2.5,2.6</li>
+	</ul>
+	<p> Referensi : Permenaker No.08 Tahun 2020
+	<p>Pilihlah jawaban yang paling benar dari pertanyaan di bawah ini!</p>
 
 {% if latest_question_list %}
 	<ul>
@@ -13,3 +33,5 @@
 {% else %}
 	<p>No polls are available.</p>
 {% endif %}
+
+</body>
